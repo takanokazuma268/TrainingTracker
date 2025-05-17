@@ -13,5 +13,6 @@ struct TrainingTrackerApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [WorkoutLog.self, WorkoutSet.self])
     }
 }
