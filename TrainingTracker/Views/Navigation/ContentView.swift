@@ -16,17 +16,28 @@ struct ContentView: View {
     }
 
     @AppStorage("selectedTab") private var selectedTab: Tab = .home
+    @State private var path = [Path]()
 
+    private var selectedTabBinding: Binding<Tab> {
+        Binding(
+            get: { selectedTab },
+            set: {
+                selectedTab = $0
+                path.removeAll()
+            }
+        )
+    }
+    
     var body: some View {
-        TabView(selection: $selectedTab) {
-            HomeView()
+        TabView(selection: selectedTabBinding) {
+            HomeView(path: $path)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("ホーム")
                 }
                 .tag(Tab.home)
 
-            WorkoutCalendarView()
+            WorkoutCalendarView(path: $path)
                 .tabItem {
                     Image(systemName: "figure.strengthtraining.traditional")
                     Text("筋トレ記録")
@@ -49,4 +60,3 @@ struct ContentView: View {
     ContentView()
         .modelContainer(for: [WorkoutLog.self, WorkoutSet.self])
 }
-

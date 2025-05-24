@@ -5,13 +5,11 @@
 //  Created by 高野和馬 on 2025/05/06.
 //
 
-import Testing
+import XCTest
 @testable import TrainingTracker
 
-struct TrainingTrackerTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class MuscleFatiguePagerViewModelTests: XCTestCase {
+    func testFatigueCalculation() {
+        print("dfdasf")
     }
-
 }

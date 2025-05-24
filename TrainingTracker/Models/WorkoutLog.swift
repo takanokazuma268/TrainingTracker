@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-class WorkoutLog {
+class WorkoutLog: Identifiable {
     @Attribute(.unique) var id: UUID
     var workoutCode: String
     var date: Date
@@ -21,5 +21,9 @@ class WorkoutLog {
         self.workoutCode = workoutCode
         self.date = date
         self.sets = sets
+    }
+    
+    var category: WorkoutCategory? {
+        return WorkoutCategory.sampleData().first(where: { $0.code == self.workoutCode })
     }
 }

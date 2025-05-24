@@ -19,6 +19,18 @@ struct WorkoutCategory: Identifiable {
     var id: String { code }
 }
 
+extension WorkoutCategory: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(code)
+    }
+}
+
+extension WorkoutCategory: Equatable {
+    static func == (lhs: WorkoutCategory, rhs: WorkoutCategory) -> Bool {
+        return lhs.code == rhs.code
+    }
+}
+
 extension WorkoutCategory {
     static func sampleData() -> [WorkoutCategory] {
         return [

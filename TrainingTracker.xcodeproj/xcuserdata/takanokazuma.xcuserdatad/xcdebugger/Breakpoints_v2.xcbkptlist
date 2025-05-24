@@ -7,17 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6101A731-159D-4685-A161-C9AC1506363E"
-            shouldBeEnabled = "No"
+            uuid = "8C553B11-DE8E-40E4-B50D-42624FDA0AF4"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainingTracker/Preview Content/Models/WorkoutCategory.swift"
+            filePath = "../../../../../var/folders/9t/x7wznk6d0v5bkj45n0vsqk8w0000gn/T/swift-generated-sources/@__swiftmacro_15TrainingTracker27MuscleFatiguePagerViewModelC5logsd5QueryfMp_.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "sampleData()"
-            landmarkType = "7">
+            startingLineNumber = "1"
+            endingLineNumber = "1">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

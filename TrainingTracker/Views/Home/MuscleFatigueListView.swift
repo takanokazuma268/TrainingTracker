@@ -8,30 +8,18 @@
 import SwiftUI
 
 struct MuscleFatigueListView: View {
-    var muscleData: [(name: String, daysAgo: Int)] {
-        let daysByName: [String: Int] = [
-            "胸": 1,
-            "背中": 3,
-            "肩": 2,
-            "前腕": 5,
-            "上腕": 1,
-            "腹筋": 6,
-            "太もも": 2,
-            "お尻": 4,
-            "ふくらげ": 0
-        ]
-        return MuscleCategory.all.map { ($0.jaName, daysByName[$0.jaName] ?? 0) }
-    }
+    let fatigueDataList: [FatigueInfo]
 
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
-                ForEach(muscleData, id: \.name) { data in
-                    MuscleCard(muscle: data.name, daysAgo: data.daysAgo)
+                ForEach(fatigueDataList) { data in
+                    MuscleCard(muscle: data.muscleCategory.jaName, daysAgo: data.difftoday)
                 }
             }
             .padding(.horizontal)
-            .padding(.vertical)
+            .padding(.top, 30)
+            .padding(.bottom)
         }
         .background(Color.black.edgesIgnoringSafeArea(.all))
     }
@@ -78,5 +66,9 @@ struct MuscleCard: View {
     }
 }
 #Preview {
-    MuscleFatigueListView()
+    MuscleFatigueListView(fatigueDataList: [
+        FatigueInfo(muscleCategory: MuscleCategory.chest, difftoday: 1, level: .high),
+        FatigueInfo(muscleCategory: MuscleCategory.back, difftoday: 3, level: .low),
+        FatigueInfo(muscleCategory: MuscleCategory.sholder, difftoday: 2, level: .low)
+    ])
 }

@@ -7,18 +7,20 @@
 
 import Foundation
 
-struct SubMuscleCategory {
+struct SubMuscleCategory:Hashable{
     let code: String
     let jaName: String
     let enName: String
 }
 
-struct MainMuscleCategory {
+struct MainMuscleCategory: Hashable {
+    
     let code: String
     let jaName: String
     let enName: String
     let subMuscleCategories: [SubMuscleCategory]
     let muscleIllustration: String
+    let isFront: Bool
 }
 
 struct MuscleCategory : Identifiable{
@@ -32,7 +34,8 @@ struct MuscleCategory : Identifiable{
             subMuscleCategories: [
                 SubMuscleCategory(code: "CH_001", jaName: "大胸筋", enName: "Pectoralis Major")
             ],
-            muscleIllustration: "front_chest"
+            muscleIllustration: "front_chest",
+            isFront: true
         ),
         MainMuscleCategory(
             code: "Back",
@@ -43,7 +46,8 @@ struct MuscleCategory : Identifiable{
                 SubMuscleCategory(code: "BK_002", jaName: "僧帽筋", enName: "Trapezius"),
                 SubMuscleCategory(code: "BK_003", jaName: "脊柱起立筋", enName: "Erector Spinae")
             ],
-            muscleIllustration: "back_back"
+            muscleIllustration: "back_back",
+            isFront: false
         ),
         MainMuscleCategory(
             code: "Sholder",
@@ -54,7 +58,8 @@ struct MuscleCategory : Identifiable{
                 SubMuscleCategory(code: "SH_002", jaName: "三角筋中部", enName: "Lateral Deltoid"),
                 SubMuscleCategory(code: "SH_003", jaName: "三角筋後部", enName: "Posterior Deltoid")
             ],
-            muscleIllustration: "front_sholder"
+            muscleIllustration: "front_sholder",
+            isFront: true
         ),
         MainMuscleCategory(
             code: "ForeArm",
@@ -63,7 +68,8 @@ struct MuscleCategory : Identifiable{
             subMuscleCategories: [
                 SubMuscleCategory(code: "FA_001", jaName: "前腕筋群", enName: "Forearms")
             ],
-            muscleIllustration: "front_forearm"
+            muscleIllustration: "front_forearm",
+            isFront: true
         ),
         MainMuscleCategory(
             code: "UpperArm",
@@ -73,7 +79,8 @@ struct MuscleCategory : Identifiable{
                 SubMuscleCategory(code: "UA_001", jaName: "上腕二頭筋", enName: "Biceps"),
                 SubMuscleCategory(code: "UA_002", jaName: "上腕三頭筋", enName: "Triceps")
             ],
-            muscleIllustration: "front_upperarm"
+            muscleIllustration: "front_upperarm",
+            isFront: true
         ),
         MainMuscleCategory(
             code: "Abs",
@@ -84,7 +91,8 @@ struct MuscleCategory : Identifiable{
                 SubMuscleCategory(code: "AB_002", jaName: "腹斜筋", enName: "Obliques"),
                 SubMuscleCategory(code: "AB_003", jaName: "腹横筋", enName: "Transverse Abdominis")
             ],
-            muscleIllustration: "front_abs"
+            muscleIllustration: "front_abs",
+            isFront: true
         ),
         MainMuscleCategory(
             code: "Thigh",
@@ -94,7 +102,8 @@ struct MuscleCategory : Identifiable{
                 SubMuscleCategory(code: "TH_001", jaName: "大腿四頭筋", enName: "Quadriceps"),
                 SubMuscleCategory(code: "TH_002", jaName: "ハムストリング", enName: "Hamstrings")
             ],
-            muscleIllustration: "front_thigh"
+            muscleIllustration: "front_thigh",
+            isFront: true
         ),
         MainMuscleCategory(
             code: "Glute",
@@ -103,7 +112,8 @@ struct MuscleCategory : Identifiable{
             subMuscleCategories: [
                 SubMuscleCategory(code: "GL_001", jaName: "大臀筋", enName: "Gluteus Maximus")
             ],
-            muscleIllustration: "back_glute"
+            muscleIllustration: "back_glute",
+            isFront: false
         ),
         MainMuscleCategory(
             code: "Calve",
@@ -113,7 +123,8 @@ struct MuscleCategory : Identifiable{
                 SubMuscleCategory(code: "CA_001", jaName: "腓腹筋", enName: "Gastrocnemius"),
                 SubMuscleCategory(code: "CA_002", jaName: "ヒラメ筋", enName: "Soleus")
             ],
-            muscleIllustration: "back_calve"
+            muscleIllustration: "back_calve",
+            isFront: false
         )
     ]
 }
@@ -155,7 +166,7 @@ extension MuscleCategory {
     // ForeArm
     static var foreArm: MainMuscleCategory { findMainCategory(code: "ForeArm") }
     static var foreArmSub1: SubMuscleCategory { findSubCategory(mainCode: "ForeArm", subCode: "FA_001") }
-    static var foreArmSub2: SubMuscleCategory { findSubCategory(mainCode: "ForeArm", subCode: "FA_002") }
+    static var foreArmSub2: SubMuscleCategory { findSubCategory(mainCode: "ForeArm", subCode: "FA_001") }
 
     // UpperArm
     static var upperArm: MainMuscleCategory { findMainCategory(code: "UpperArm") }

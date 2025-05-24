@@ -1,38 +1,22 @@
 import SwiftUI
 
 struct MuscleFatigueIllustrationView: View {
-    let fatigueInfoFrontTest: [fatigueInfo] = [
-        .init(
-            muscleCategory: MuscleCategory.abs,
-            fatigueLevel: .low
-        ),
-        .init(
-            muscleCategory: MuscleCategory.chest,
-            fatigueLevel: .high
-        ),
-        .init(
-            muscleCategory: MuscleCategory.sholder,
-            fatigueLevel: .low
-        )
-
-    ]
-
-    let fatigueInfoBackTest: [fatigueInfo] = [
-        .init(
-            muscleCategory: MuscleCategory.back,
-            fatigueLevel: .high
-        ),
-        .init(
-            muscleCategory: MuscleCategory.calve,
-            fatigueLevel: .low
-        )
-    ]
+    
+    let fatigueDataList: [FatigueInfo]
+    
+    var fatigueInfoFront: [FatigueInfo] {
+        fatigueDataList.filter { $0.muscleCategory.isFront }
+    }
+    
+    var fatigueInfoBack: [FatigueInfo] {
+        fatigueDataList.filter { !$0.muscleCategory.isFront }
+    }
 
     var body: some View {
         VStack(spacing: 1) {
             HStack {
-                MuscleFatigueImage(fatigueInfo: fatigueInfoFrontTest, baseImageName: "front_base")
-                MuscleFatigueImage(fatigueInfo: fatigueInfoBackTest, baseImageName: "back_base")
+                MuscleFatigueImage(fatigueInfo: fatigueInfoFront, baseImageName: "front_base")
+                MuscleFatigueImage(fatigueInfo: fatigueInfoBack, baseImageName: "back_base")
             }
             HStack(spacing: 16) {
                 HStack(spacing: 4) {
@@ -54,7 +38,6 @@ struct MuscleFatigueIllustrationView: View {
             }
         }
         .padding(.bottom, 8)
-        
     }
 }
 
@@ -71,13 +54,13 @@ enum FatigueLevel {
 }
 
 struct MuscleFatigueImage: View {
-    let fatigueInfo: [fatigueInfo]
+    let fatigueInfo: [FatigueInfo]
     let baseImageName: String
 
     var body: some View {
         ZStack {
             ForEach(fatigueInfo) { info in
-                Color(info.fatigueLevel.color)
+                Color(info.level.color)
                     .mask(
                         Image(info.muscleCategory.muscleIllustration)
                             .resizable()
@@ -94,14 +77,4 @@ struct MuscleFatigueImage: View {
     }
 }
 
-struct fatigueInfo: Identifiable {
-    var id: String { muscleCategory.code }
-    
-    let muscleCategory: MainMuscleCategory
-    let fatigueLevel: FatigueLevel
-}
 
-#Preview {
-    MuscleFatigueIllustrationView()
-        .background(Color.black.edgesIgnoringSafeArea(.all))
-}
