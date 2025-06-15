@@ -1,0 +1,65 @@
+[
+  {
+    "code": "Chest",
+    "jaName": "胸",
+    "enName": "Chest",
+    "illustration": "front_chest",
+    "isFront": true
+  },
+  {
+    "code": "Back",
+    "jaName": "背中",
+    "enName": "Back",
+    "illustration": "back_back",
+    "isFront": false
+  },
+  {
+    "code": "Sholder",
+    "jaName": "肩",
+    "enName": "Shoulder",
+    "illustration": "front_sholder",
+    "isFront": true
+  },
+  {
+    "code": "ForeArm",
+    "jaName": "前腕",
+    "enName": "ForeArm",
+    "illustration": "front_forearm",
+    "isFront": true
+  },
+  {
+    "code": "UpperArm",
+    "jaName": "上腕",
+    "enName": "UpperArm",
+    "illustration": "front_upperarm",
+    "isFront": true
+  },
+  {
+    "code": "Abs",
+    "jaName": "腹筋",
+    "enName": "Abs",
+    "illustration": "front_abs",
+    "isFront": true
+  },
+  {
+    "code": "Thigh",
+    "jaName": "太もも",
+    "enName": "Thigh",
+    "illustration": "front_thigh",
+    "isFront": true
+  },
+  {
+    "code": "Glute",
+    "jaName": "お尻",
+    "enName": "Glute",
+    "illustration": "back_glute",
+    "isFront": false
+  },
+  {
+    "code": "Calve",
+    "jaName": "ふくらはぎ",
+    "enName": "Calve",
+    "illustration": "back_calve",
+    "isFront": false
+  }
+]

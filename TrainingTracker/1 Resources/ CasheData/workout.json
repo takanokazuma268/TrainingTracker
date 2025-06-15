@@ -1,0 +1,313 @@
+[
+  {
+    "code": "WK_001",
+    "jaName": "ベンチプレス",
+    "enName": "Bench Press",
+    "imageName": "CH_BenchPress",
+    "mainMuscles": ["Chest"],
+    "subMuscles": ["CH_001"],
+    "equipment": ["バーベル", "ベンチ"],
+    "displayPriority": 1
+  },
+  {
+    "code": "WK_002",
+    "jaName": "ダンベルフライ",
+    "enName": "Dumbbell Fly",
+    "imageName": "CH_DumbbellFly",
+    "mainMuscles": ["Chest"],
+    "subMuscles": ["CH_001"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 2
+  },
+  {
+    "code": "WK_003",
+    "jaName": "チェストプレス",
+    "enName": "Chest Press",
+    "imageName": "CH_ChestPress",
+    "mainMuscles": ["Chest"],
+    "subMuscles": ["CH_001"],
+    "equipment": ["マシン"],
+    "displayPriority": 3
+  },
+  {
+    "code": "WK_004",
+    "jaName": "インクラインベンチプレス",
+    "enName": "Incline Bench Press",
+    "imageName": "CH_InclineBenchPress",
+    "mainMuscles": ["Chest"],
+    "subMuscles": ["CH_001"],
+    "equipment": ["バーベル"],
+    "displayPriority": 4
+  },
+  {
+    "code": "WK_005",
+    "jaName": "プッシュアップ",
+    "enName": "Push up",
+    "imageName": "CH_PushUp",
+    "mainMuscles": ["Chest"],
+    "subMuscles": ["CH_001"],
+    "equipment": ["自重"],
+    "displayPriority": 5
+  }
+,
+  {
+    "code": "WK_006",
+    "jaName": "ディップス",
+    "enName": "Dips",
+    "imageName": "UA_Dips",
+    "mainMuscles": ["Chest"],
+    "subMuscles": ["CH_001"],
+    "equipment": ["自重"],
+    "displayPriority": 6
+  },
+  {
+    "code": "WK_007",
+    "jaName": "ケーブルクロスオーバー",
+    "enName": "Cable Crossover",
+    "imageName": "CH_CableCrossover",
+    "mainMuscles": ["Chest"],
+    "subMuscles": ["CH_001"],
+    "equipment": ["ケーブルマシン"],
+    "displayPriority": 7
+  },
+  {
+    "code": "WK_008",
+    "jaName": "ラットプルダウン",
+    "enName": "Lat Pulldown",
+    "imageName": "BK_LatPulldown",
+    "mainMuscles": ["Back"],
+    "subMuscles": ["BK_001"],
+    "equipment": ["マシン"],
+    "displayPriority": 8
+  },
+  {
+    "code": "WK_009",
+    "jaName": "ベントオーバーロー",
+    "enName": "Bent Over Row",
+    "imageName": "BK_BentOverRow",
+    "mainMuscles": ["Back"],
+    "subMuscles": ["BK_001"],
+    "equipment": ["バーベル"],
+    "displayPriority": 9
+  },
+  {
+    "code": "WK_010",
+    "jaName": "デッドリフト",
+    "enName": "Deadlift",
+    "imageName": "BK_Deadlift",
+    "mainMuscles": ["Back"],
+    "subMuscles": ["BK_003"],
+    "equipment": ["バーベル"],
+    "displayPriority": 10
+  },
+  {
+    "code": "WK_011",
+    "jaName": "シュラッグ",
+    "enName": "Shrug",
+    "imageName": "BK_Shrug",
+    "mainMuscles": ["Back"],
+    "subMuscles": ["BK_002"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 11
+  },
+  {
+    "code": "WK_012",
+    "jaName": "シーテッドロー",
+    "enName": "Seated Row",
+    "imageName": "BK_SeatedRow",
+    "mainMuscles": ["Back"],
+    "subMuscles": ["BK_001"],
+    "equipment": ["マシン"],
+    "displayPriority": 12
+  },
+  {
+    "code": "WK_013",
+    "jaName": "ワンアームダンベルロー",
+    "enName": "One Arm Dumbbell Row",
+    "imageName": "BK_OneArmDumbbellRow",
+    "mainMuscles": ["Back"],
+    "subMuscles": ["BK_001"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 13
+  },
+  {
+    "code": "WK_014",
+    "jaName": "フロントレイズ",
+    "enName": "Front Raise",
+    "imageName": "SH_FrontRaise",
+    "mainMuscles": ["Sholder"],
+    "subMuscles": ["SH_001"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 14
+  },
+  {
+    "code": "WK_015",
+    "jaName": "サイドレイズ",
+    "enName": "Side Raise",
+    "imageName": "SH_SideRaise",
+    "mainMuscles": ["Sholder"],
+    "subMuscles": ["SH_002"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 15
+  },
+  {
+    "code": "WK_016",
+    "jaName": "リアレイズ",
+    "enName": "Rear Raise",
+    "imageName": "SH_RearRaise",
+    "mainMuscles": ["Sholder"],
+    "subMuscles": ["SH_003"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 16
+  },
+  {
+    "code": "WK_017",
+    "jaName": "ショルダープレス",
+    "enName": "Shoulder Press",
+    "imageName": "SH_ShoulderPress",
+    "mainMuscles": ["Sholder"],
+    "subMuscles": ["SH_001", "SH_002", "SH_003"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 17
+  },
+  {
+    "code": "WK_018",
+    "jaName": "バーベルカール",
+    "enName": "Barbell Curl",
+    "imageName": "UA_BarbellCurl",
+    "mainMuscles": ["UpperArm"],
+    "subMuscles": ["UA_001"],
+    "equipment": ["バーベル"],
+    "displayPriority": 18
+  },
+  {
+    "code": "WK_019",
+    "jaName": "ダンベルカール",
+    "enName": "Dumbbell Curl",
+    "imageName": "UA_DumbbellCurl",
+    "mainMuscles": ["UpperArm"],
+    "subMuscles": ["UA_001"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 19
+  },
+  {
+    "code": "WK_020",
+    "jaName": "コンセントレーションカール",
+    "enName": "Concentration Curl",
+    "imageName": "UA_ConcentrationCurl",
+    "mainMuscles": ["UpperArm"],
+    "subMuscles": ["UA_001"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 20
+  },
+  {
+    "code": "WK_021",
+    "jaName": "トライセップスエクステンション",
+    "enName": "Triceps Extension",
+    "imageName": "UA_TricepsExtension",
+    "mainMuscles": ["UpperArm"],
+    "subMuscles": ["UA_002"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 21
+  },
+  {
+    "code": "WK_022",
+    "jaName": "ブルガリアンスクワット",
+    "enName": "Bulgarian Squat",
+    "imageName": "TH_BulgarianSquat",
+    "mainMuscles": ["Thigh"],
+    "subMuscles": ["TH_001", "TH_002"],
+    "equipment": ["自重"],
+    "displayPriority": 22
+  },
+  {
+    "code": "WK_023",
+    "jaName": "リストカール",
+    "enName": "Wrist Curl",
+    "imageName": "FA_WristCurl",
+    "mainMuscles": ["ForeArm"],
+    "subMuscles": ["FA_001"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 23
+  },
+  {
+    "code": "WK_024",
+    "jaName": "クランチ",
+    "enName": "Crunch",
+    "imageName": "AB_Crunch",
+    "mainMuscles": ["Abs"],
+    "subMuscles": ["AB_001"],
+    "equipment": ["自重"],
+    "displayPriority": 24
+  },
+  {
+    "code": "WK_025",
+    "jaName": "レッグレイズ",
+    "enName": "Leg Raise",
+    "imageName": "TH_LegPress",
+    "mainMuscles": ["Abs"],
+    "subMuscles": ["AB_001"],
+    "equipment": ["自重"],
+    "displayPriority": 25
+  },
+  {
+    "code": "WK_026",
+    "jaName": "ロシアンツイスト",
+    "enName": "Russian Twist",
+    "imageName": "AB_RussianTwist",
+    "mainMuscles": ["Abs"],
+    "subMuscles": ["AB_002"],
+    "equipment": ["自重"],
+    "displayPriority": 26
+  },
+  {
+    "code": "WK_027",
+    "jaName": "レッグプレス",
+    "enName": "Leg Raise",
+    "imageName": "AB_LegRaise",
+    "mainMuscles": ["Thigh"],
+    "subMuscles": ["TH_001"],
+    "equipment": ["マシン"],
+    "displayPriority": 27
+  },
+  {
+    "code": "WK_028",
+    "jaName": "スクワット",
+    "enName": "Squat",
+    "imageName": "TH_Squat",
+    "mainMuscles": ["Thigh"],
+    "subMuscles": ["TH_001", "TH_002"],
+    "equipment": ["バーベル"],
+    "displayPriority": 28
+  },
+  {
+    "code": "WK_029",
+    "jaName": "ランジ",
+    "enName": "Lunge",
+    "imageName": "TH_Lunge",
+    "mainMuscles": ["Thigh"],
+    "subMuscles": ["TH_001", "TH_002"],
+    "equipment": ["ダンベル"],
+    "displayPriority": 29
+  },
+  {
+    "code": "WK_030",
+    "jaName": "カーフレイズ",
+    "enName": "Calf Raise",
+    "imageName": "CA_CalfRaise",
+    "mainMuscles": ["Calve"],
+    "subMuscles": ["CA_001", "CA_002"],
+    "equipment": ["自重"],
+    "displayPriority": 30
+  },
+  {
+    "code": "WK_031",
+    "jaName": "レッグ・エクステンション",
+    "enName": "Leg Extension",
+    "imageName": "TH_LegExtension",
+    "mainMuscles": ["Thigh"],
+    "subMuscles": ["TH_001", "TH_002"],
+    "equipment": ["マシン"],
+    "displayPriority": 31
+  }
+]

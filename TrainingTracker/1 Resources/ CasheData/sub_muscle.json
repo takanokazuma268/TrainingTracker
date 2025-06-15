@@ -1,0 +1,112 @@
+
+
+[
+  {
+    "code": "CH_001",
+    "jaName": "大胸筋",
+    "enName": "Pectoralis Major",
+    "mainMuscleCode": "Chest"
+  },
+  {
+    "code": "BK_001",
+    "jaName": "広背筋",
+    "enName": "Latissimus Dorsi",
+    "mainMuscleCode": "Back"
+  },
+  {
+    "code": "BK_002",
+    "jaName": "僧帽筋",
+    "enName": "Trapezius",
+    "mainMuscleCode": "Back"
+  },
+  {
+    "code": "BK_003",
+    "jaName": "脊柱起立筋",
+    "enName": "Erector Spinae",
+    "mainMuscleCode": "Back"
+  },
+  {
+    "code": "SH_001",
+    "jaName": "三角筋前部",
+    "enName": "Anterior Deltoid",
+    "mainMuscleCode": "Sholder"
+  },
+  {
+    "code": "SH_002",
+    "jaName": "三角筋中部",
+    "enName": "Lateral Deltoid",
+    "mainMuscleCode": "Sholder"
+  },
+  {
+    "code": "SH_003",
+    "jaName": "三角筋後部",
+    "enName": "Posterior Deltoid",
+    "mainMuscleCode": "Sholder"
+  },
+  {
+    "code": "FA_001",
+    "jaName": "前腕筋群",
+    "enName": "Forearms",
+    "mainMuscleCode": "ForeArm"
+  },
+  {
+    "code": "UA_001",
+    "jaName": "上腕二頭筋",
+    "enName": "Biceps",
+    "mainMuscleCode": "UpperArm"
+  },
+  {
+    "code": "UA_002",
+    "jaName": "上腕三頭筋",
+    "enName": "Triceps",
+    "mainMuscleCode": "UpperArm"
+  },
+  {
+    "code": "AB_001",
+    "jaName": "腹直筋",
+    "enName": "Rectus Abdominis",
+    "mainMuscleCode": "Abs"
+  },
+  {
+    "code": "AB_002",
+    "jaName": "腹斜筋",
+    "enName": "Obliques",
+    "mainMuscleCode": "Abs"
+  },
+  {
+    "code": "AB_003",
+    "jaName": "腹横筋",
+    "enName": "Transverse Abdominis",
+    "mainMuscleCode": "Abs"
+  },
+  {
+    "code": "TH_001",
+    "jaName": "大腿四頭筋",
+    "enName": "Quadriceps",
+    "mainMuscleCode": "Thigh"
+  },
+  {
+    "code": "TH_002",
+    "jaName": "ハムストリング",
+    "enName": "Hamstrings",
+    "mainMuscleCode": "Thigh"
+  },
+  {
+    "code": "GL_001",
+    "jaName": "大臀筋",
+    "enName": "Gluteus Maximus",
+    "mainMuscleCode": "Glute"
+  },
+  {
+    "code": "CA_001",
+    "jaName": "腓腹筋",
+    "enName": "Gastrocnemius",
+    "mainMuscleCode": "Calve"
+  },
+  {
+    "code": "CA_002",
+    "jaName": "ヒラメ筋",
+    "enName": "Soleus",
+    "mainMuscleCode": "Calve"
+  }
+]

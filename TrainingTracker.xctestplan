@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "A7E3EE61-2290-4DEB-B0C6-C098AE2D1A33",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TrainingTracker.xcodeproj",
+      "identifier" : "DE7E19392DC99F6B00D5866E",
+      "name" : "TrainingTracker"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:TrainingTracker.xcodeproj",
+        "identifier" : "DE7E19492DC99F6D00D5866E",
+        "name" : "TrainingTrackerTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -27,11 +27,39 @@
 		DE7E193A2DC99F6B00D5866E /* TrainingTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7E194A2DC99F6D00D5866E /* TrainingTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7E19542DC99F6D00D5866E /* TrainingTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7F698B2DE7B3EF002A572A /* TrainingTracker.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TrainingTracker.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DE7F6A662DE7C31D002A572A /* Exceptions for "TrainingTracker" folder in "TrainingTrackerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"1 Resources/ CasheData/main_muscle.json",
+				"1 Resources/ CasheData/sub_muscle.json",
+				"1 Resources/ CasheData/workout.json",
+			);
+			target = DE7E19492DC99F6D00D5866E /* TrainingTrackerTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		DEAE09382DE60DC200E48E0E /* Exceptions for "TrainingTracker" folder in "Compile Sources" phase from "TrainingTracker" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = DE7E19362DC99F6B00D5866E /* Sources */;
+			membershipExceptions = (
+				"1 Resources/ CasheData/main_muscle.json",
+				"1 Resources/ CasheData/sub_muscle.json",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DE7E193C2DC99F6B00D5866E /* TrainingTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DEAE09382DE60DC200E48E0E /* Exceptions for "TrainingTracker" folder in "Compile Sources" phase from "TrainingTracker" target */,
+				DE7F6A662DE7C31D002A572A /* Exceptions for "TrainingTracker" folder in "TrainingTrackerTests" target */,
+			);
 			path = TrainingTracker;
 			sourceTree = "<group>";
 		};
@@ -75,6 +103,7 @@
 		DE7E19312DC99F6B00D5866E = {
 			isa = PBXGroup;
 			children = (
+				DE7F698B2DE7B3EF002A572A /* TrainingTracker.xctestplan */,
 				DE7E193C2DC99F6B00D5866E /* TrainingTracker */,
 				DE7E194D2DC99F6D00D5866E /* TrainingTrackerTests */,
 				DE7E19572DC99F6D00D5866E /* TrainingTrackerUITests */,
